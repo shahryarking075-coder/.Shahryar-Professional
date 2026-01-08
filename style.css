@@ -73,28 +73,28 @@ header nav a:hover {
 
 .school-gallery h2 {
   color: #003366;
-  margin-bottom: 20px;
-  font-size: 26px;
+  margin-bottom: 10px;
+  font-size: 1px;
 }
 
 .school-gallery .gallery-row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
 }
 
 .school-gallery .gallery-row img {
   width: 220px;
-  height: 150px;
+  height: 220px;
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: 50px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .school-gallery .gallery-row img:hover {
-  transform: scale(1.05);
+  transform: scale(1.04);
   box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
@@ -147,3 +147,4 @@ footer {
     height: 180px;
   }
 }
+
