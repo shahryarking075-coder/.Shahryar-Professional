@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://shahryarking075-coder.github.io/Shahryar-Professional-Website/index.html</loc>
+    <lastmod>2026-01-08</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://shahryarking075-coder.github.io/Shahryar-Professional-Website/about.html</loc>
+    <lastmod>2026-01-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Admission Info -->
+  <url>
+    <loc>https://shahryarking075-coder.github.io/Shahryar-Professional-Website/admission.html</loc>
+    <lastmod>2026-01-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Online Apply Form -->
+  <url>
+    <loc>https://shahryarking075-coder.github.io/Shahryar-Professional-Website/apply.html</loc>
+    <lastmod>2026-01-08</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Thank You Page -->
+  <url>
+    <loc>https://shahryarking075-coder.github.io/Shahryar-Professional-Website/thanks.html</loc>
+    <lastmod>2026-01-08</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Classes -->
+  <url>
+    <loc>https://shahryarking075-coder.github.io/Shahryar-Professional-Website/classes.html</loc>
+    <lastmod>2026-01-08</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Faculty / Teachers -->
+  <url>
+    <loc>https://shahryarking075-coder.github.io/Shahryar-Professional-Website/faculty.html</loc>
+    <lastmod>2026-01-08</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Gallery -->
+  <url>
+    <loc>https://shahryarking075-coder.github.io/Shahryar-Professional-Website/gallery.html</loc>
+    <lastmod>2026-01-08</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Notices -->
+  <url>
+    <loc>https://shahryarking075-coder.github.io/Shahryar-Professional-Website/notice.html</loc>
+    <lastmod>2026-01-08</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Results -->
+  <url>
+    <loc>https://shahryarking075-coder.github.io/Shahryar-Professional-Website/results.html</loc>
+    <lastmod>2026-01-08</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Downloads / Resources -->
+  <url>
+    <loc>https://shahryarking075-coder.github.io/Shahryar-Professional-Website/downloads.html</loc>
+    <lastmod>2026-01-08</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Events -->
+  <url>
+    <loc>https://shahryarking075-coder.github.io/Shahryar-Professional-Website/events.html</loc>
+    <lastmod>2026-01-08</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://shahryarking075-coder.github.io/Shahryar-Professional-Website/contact.html</loc>
+    <lastmod>2026-01-08</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
