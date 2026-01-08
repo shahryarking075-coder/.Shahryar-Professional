@@ -1,0 +1,11 @@
+# Allow all search engines to index the site
+User-agent: *
+Disallow:
+
+# Sitemap location for search engines
+Sitemap: https://shahryarking075-coder.github.io/Shahryar-Professional-Website/sitemap.xml
+
+# Optional: Block unnecessary system files
+Disallow: /node_modules/
+Disallow: /js/temp/
+Disallow: /css/temp/
