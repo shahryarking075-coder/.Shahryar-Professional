@@ -173,3 +173,27 @@ padding:12px;
 background:#f2f6ff;
   }
 
+
+.result-form{
+text-align:center;
+margin-top:40px;
+}
+.result-form input{
+padding:12px;
+width:240px;
+border-radius:6px;
+border:1px solid #ccc;
+}
+.result-form button{
+padding:12px 25px;
+background:#004080;
+color:white;
+border:none;
+border-radius:6px;
+}
+#result-box{
+margin-top:25px;
+font-size:18px;
+color:green;
+text-align:center;
+  }
