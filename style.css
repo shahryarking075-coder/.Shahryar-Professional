@@ -147,4 +147,29 @@ footer {
     height: 180px;
   }
 }
+.faculty-page{
+padding:40px;
+text-align:center;
+}
+
+.schedule-table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+.schedule-table th{
+background:#004080;
+color:white;
+padding:12px;
+}
+
+.schedule-table td{
+border:1px solid #ccc;
+padding:12px;
+}
+
+.schedule-table tr:nth-child(even){
+background:#f2f6ff;
+  }
 
