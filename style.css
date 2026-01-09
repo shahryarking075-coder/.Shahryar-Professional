@@ -197,3 +197,24 @@ font-size:18px;
 color:green;
 text-align:center;
   }
+
+.apply-form{
+max-width:400px;
+margin:40px auto;
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+.apply-form input,.apply-form textarea{
+padding:10px;
+border-radius:6px;
+border:1px solid #ccc;
+}
+.apply-form button{
+background:#004080;
+color:white;
+padding:12px;
+border:none;
+border-radius:6px;
+font-size:16px;
+  }
