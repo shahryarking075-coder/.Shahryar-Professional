@@ -218,3 +218,43 @@ border:none;
 border-radius:6px;
 font-size:16px;
   }
+
+.admin-panel{
+padding:40px;
+text-align:center;
+}
+
+.admin-table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+.admin-table th{
+background:#004080;
+color:white;
+padding:12px;
+}
+
+.admin-table td{
+border:1px solid #ccc;
+padding:12px;
+text-align:center;
+}
+
+.admin-table tr:nth-child(even){
+background:#f2f6ff;
+}
+
+.admin-table button{
+padding:6px 12px;
+border:none;
+border-radius:5px;
+background:#ffc107;
+cursor:pointer;
+transition:0.3s;
+}
+
+.admin-table button:hover{
+background:#ffb000;
+}
