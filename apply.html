@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
 <title>Online Admission – Shahryar International School</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
@@ -8,21 +9,75 @@
 
 <h2>Online Admission Form</h2>
 
-<form action="sheriishahriyar33@gmail.com" method="POST" class="apply-form">
+<form id="admissionForm" class="apply-form">
 
-<input type="text" name="Student Name" placeholder="Student Name" required>
-<input type="text" name="Father Name" placeholder="Father Name" required>
-<input type="number" name="Class" placeholder="Class" required>
-<input type="tel" name="Contact" placeholder="Parent Contact" required>
-<textarea name="Address" placeholder="Address"></textarea>
-
-<input type="hidden" name="_next" value="thanks.html">
-<input type="hidden" name="_captcha" value="false">
+<input type="text" id="studentName" placeholder="Student Name" required>
+<input type="text" id="fatherName" placeholder="Father Name" required>
+<input type="number" id="studentClass" placeholder="Class" required>
+<input type="tel" id="contact" placeholder="Parent Contact" required>
+<textarea id="address" placeholder="Address"></textarea>
 
 <button type="submit">Submit Admission</button>
 
 </form>
 
+<div id="message" style="text-align:center;margin-top:20px;color:green;"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script>
+const { jsPDF } = window.jspdf;
+
+document.getElementById('admissionForm').addEventListener('submit', function(e){
+    e.preventDefault();
+
+    // Collect Data
+    const student = {
+        name: document.getElementById('studentName').value,
+        father: document.getElementById('fatherName').value,
+        cls: document.getElementById('studentClass').value,
+        contact: document.getElementById('contact').value,
+        address: document.getElementById('address').value
+    };
+
+    // 1️⃣ Create PDF
+    const doc = new jsPDF();
+    doc.setFontSize(16);
+    doc.text("Shahryar International School", 20, 20);
+    doc.setFontSize(14);
+    doc.text("Admission Slip", 20, 30);
+    doc.text(`Student Name: ${student.name}`, 20, 50);
+    doc.text(`Father Name: ${student.father}`, 20, 60);
+    doc.text(`Class: ${student.cls}`, 20, 70);
+    doc.text(`Contact: ${student.contact}`, 20, 80);
+    doc.text(`Address: ${student.address}`, 20, 90);
+
+    const pdfData = doc.output('blob');
+
+    // 2️⃣ Send Email via formsubmit.co
+    const formData = new FormData();
+    formData.append("_captcha", "false");
+    formData.append("_subject", `New Admission: ${student.name}`);
+    formData.append("Student Name", student.name);
+    formData.append("Father Name", student.father);
+    formData.append("Class", student.cls);
+    formData.append("Contact", student.contact);
+    formData.append("Address", student.address);
+    formData.append("_next", "thanks.html");
+
+    fetch("https://formsubmit.co/sheriishahriyar33@gmail.com", {
+        method: "POST",
+        body: formData
+    }).then(res=>{
+        document.getElementById("message").innerText = "Admission submitted! Check your email for confirmation.";
+        document.getElementById('admissionForm').reset();
+        // 3️⃣ Offer PDF download
+        doc.save(`${student.name}-AdmissionSlip.pdf`);
+    }).catch(err=>{
+        document.getElementById("message").innerText = "Error! Try again.";
+    });
+
+});
+</script>
+
 </body>
 </html>
-
