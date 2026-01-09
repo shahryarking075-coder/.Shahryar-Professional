@@ -5,6 +5,11 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<h1>Form Submitted Successfully</h1>
+
+<h2>Thank You!</h2>
+<p>Your admission form has been submitted successfully.  
+School office will contact you soon.</p>
+
+<a href="index.html">Back to Home</a>
 </body>
 </html>
