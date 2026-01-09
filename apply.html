@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Apply Online</title>
-<link rel="stylesheet" href="style.css">
+<title>Online Admission – Shahryar International School</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<h1>Online Admission Form</h1>
+<h2>Online Admission Form</h2>
 
-<form action="thanks.html">
-<input type="text" placeholder="Student Name" required>
-<input type="text" placeholder="Class" required>
-<input type="text" placeholder="Parent Contact" required>
-<button type="submit">Submit</button>
+<form action="https://formsubmit.co/YOUR_EMAIL@gmail.com" method="POST" class="apply-form">
+
+<input type="text" name="Student Name" placeholder="Student Name" required>
+<input type="text" name="Father Name" placeholder="Father Name" required>
+<input type="number" name="Class" placeholder="Class" required>
+<input type="tel" name="Contact" placeholder="Parent Contact" required>
+<textarea name="Address" placeholder="Address"></textarea>
+
+<input type="hidden" name="_next" value="thanks.html">
+<input type="hidden" name="_captcha" value="false">
+
+<button type="submit">Submit Admission</button>
+
 </form>
 
 </body>
