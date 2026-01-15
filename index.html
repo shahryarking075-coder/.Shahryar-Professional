@@ -26,4 +26,30 @@
 </div>
 
 </body>
+  <!-- 🔊 WELCOME VOICE BUTTON -->
+<button id="voiceBtn" style="
+margin:20px;
+padding:14px 22px;
+border-radius:30px;
+background:linear-gradient(45deg,#00ffd5,#00ff88);
+border:none;
+font-size:17px;
+box-shadow:0 0 15px #00ffd5;
+">
+🔊 داخلہ کی معلومات
+</button>
+
+<script>
+document.getElementById("voiceBtn").addEventListener("click", function(){
+  var msg = new SpeechSynthesisUtterance();
+  msg.text = "خوش آمدید!
+گورنمنٹ بوائز ہائی اسکول میں آن لائن داخلہ کے لیے درخواست دینے کے لیے نیچے دیے گئے "اپلائی ناؤ" بٹن پر کلک کریں۔";
+  msg.lang = "ur-PK";
+  msg.rate = 0.9;
+  msg.pitch = 1.1;
+  speechSynthesis.speak(msg);
+  this.style.display="none";
+});
+</script>
 </html>
+
